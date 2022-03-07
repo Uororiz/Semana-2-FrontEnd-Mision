@@ -1,0 +1,287 @@
+html,
+body,
+#intro {
+  height: 100%;
+  font-family: 'Quicksand';
+  font-size: 22px;
+  background-color: #fff3f9;
+  color:#704f46;
+}
+
+h1, h2, h4, h5, a {
+  font-weight: bolder;
+}
+
+h1 {
+  font-style: italic;
+}
+
+#intro {
+  /* background: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full%20page/img%20%283%29.jpg") */
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 27px;
+  border-radius: 6%;
+}
+
+.logo {
+  background-position: center;
+  background-image: url(../assets/logoPc.png);
+  width: 69px;
+  height: 40px;
+  margin-left: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h2 {
+  margin-top: 46px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: start;
+  padding: 20px;
+}
+
+.form-section {
+  width: 32%;
+  margin-right: 1%;
+}
+
+.form-section-grande {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-section-grande .form-section:last-child {
+  margin-right: 0;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 70%;
+  text-align: center;
+  margin: auto;
+}
+
+
+.card {
+  margin: 20px;
+  background-color: #fbe4f0;
+  color: #704f46;
+}
+
+.card-menu {
+  width: 18rem;
+}
+
+.card-text {
+  min-height: 99px;
+}
+
+.card-body p{
+  text-align: start;
+}
+
+.btn-primary {
+  background-color: #d1737f;
+  border-color: #d1737f;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  min-width: 120px;
+  text-align: right;
+}
+
+.dropdown .dropdown-button {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: #d1737f;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+
+}
+
+.btn-primary:hover, .btn-primary:focus{
+  background-color: #704f46;
+  border-color: #d1737f;
+}
+
+.navbar {
+  background-color: #fbe4f0 !important;
+  color: #704f46;
+}
+
+.navbar a:hover, .dropdown-button:hover {
+  background-color: #d1737f;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 130px;
+  background-color: #fbe4f0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #704f46;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content-inventario {
+  display: none;
+  position: fixed;
+  min-width: 130px;
+  background-color: #fbe4f0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: auto;
+  margin-left: 0%;
+  left: 90px;
+  top: 15px;
+}
+
+
+.dropdown-content-inventario a {
+  float: none;
+  color: #704f46;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-align: left;
+  display: block;
+}
+
+.dropdown-content-inventario a:hover {
+  background-color: #fbe4f0;
+}
+
+.dropdown-content a:hover {
+  background-color: #fbe4f0;
+}
+
+.sticky-top:hover .dropdown-content-inventario {
+  display: block;
+  position: fixed;
+}
+
+.list-group-item {
+  background-color: #fbe4f0;
+  color: #704f46;
+  font-family: Quicksand;
+}
+
+.badge {
+  color: #704f46;
+}
+
+iframe {
+  display: flex;
+  width: 80%;
+  height: 200px;
+  margin: auto;
+}
+
+.title-container-pedidos {
+  display: flex;
+  justify-content: center;
+}
+
+.title-container-pedidos:last-child {
+  justify-content: end;
+}
+
+.sticky-top {
+  width: 27px;
+}
+
+.sticky-top i {
+  color: #704f46;
+}
+
+.sticky-top button {
+  margin-left: 85%;
+}
+
+footer {
+  bottom: auto;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 1220px) {
+  .form-section {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .form-section-grande {
+    text-align: start;
+    display: flex;
+  }
+
+  .form-section-grande .form-section {
+    width: 50%;
+    margin: auto;
+  }
+
+  .form-section-grande .form-section:last-child {
+    margin: 0;
+  }
+
+  .card-menu {
+    width: auto;
+  }
+  
+}
+
+@media (max-width: 992px) {
+    .logo {
+        width: 40px;
+        height: 40px;
+        background-image: url(../assets/logoCel.png);
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+      position: fixed;
+    }
+
+    .form-container img {
+      text-align: center;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+
+}
